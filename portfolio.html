@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0,0,33);
+            color: white;
+        }
+        nav{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(27, 27, 65);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+                list-style: none;
+                margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        /*nav ul li a:hover{
+            color: lavenderblush;
+            font-size: 1.02rem;
+        }*/
+        .hovereffect:hover{
+            color: lavender;
+            font-weight: 1.2rem;
+            font-size: 1.02rem;
+        }
+
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstsection > div{
+            width: 30%;
+        }
+
+        .leftsection{
+            font-size: 3rem;
+           
+        }
+        .rightsection img{
+            width: 80%;
+            margin: 50px 0;
+        }
+        .purple{
+            color: rgb(170, 91, 244);
+            
+        }
+        #element{
+            color: rgb(170, 91, 244);
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Surendra's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a class="hovereffect" href="">Home</a></li>
+                    <li><a class="hovereffect" href="">About</a></li>
+                    <li><a class="hovereffect" href="">Services</a></li>
+                    <li><a class="hovereffect" href="">Projects</a></li>
+                    <li><a class="hovereffect" href="">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                hi my name is <span class="purple">Surendra</span> 
+                <div>and i am a passionate </div>
+                <span id="element"></span>
+
+            </div>
+                
+            <div class="rightsection">
+                <img src="bg.png" alt="image">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web developer', 'Graphics Designer','DSA Expert','Data Analyst'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
