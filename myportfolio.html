@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0,0,33);
+            color: white;
+        }
+        nav{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(27, 27, 65);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+                list-style: none;
+                margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        /*nav ul li a:hover{
+            color: lavenderblush;
+            font-size: 1.02rem;
+        }*/
+        .hovereffect:hover{
+            color: lavender;
+            font-weight: 1.2rem;
+            font-size: 1.02rem;
+        }
+
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0;
+        }
+
+        .firstsection > div{
+            width: 30%;
+        }
+
+        .leftsection{
+            font-size: 3rem;
+           
+        }
+        .rightsection img{
+            width: 80%;
+            margin: 50px 0;
+        }
+        .purple{
+            color: rgb(170, 91, 244);
+            
+        }
+        #element{
+            color: rgb(170, 91, 244);
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin:auto;
+            height: 50vh;
+        }
+        .secondsection .box{
+            background: white;
+            width: 35vw;
+            height: 2px;
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .secondsection .vertical{
+            height:60px;
+            width:2px;
+            background: white;
+            margin: 0 100px;
+        }
+        .vertical-title{
+            position: relative;
+            top: 70px;
+            width: 150px;
+        }
+
+        .vertical-desc{
+            position:relative;
+            top: 75px;
+            color: white;
+            width: 150px;
+            font-size: 12px;
+        }
+        footer{
+            background-color:#0e0e1a;
+        }
+        .footer{
+            display: flex;
+            margin-top: 20px;
+            margin-left: 120px;
+            justify-content: space-evenly;
+        }
+        footer ul{
+            list-style: none;
+        }
+        .footer>div{
+            width: 223px;
+            margin-top: 20px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Surendra's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a class="hovereffect" href="">Home</a></li>
+                    <li><a class="hovereffect" href="">About</a></li>
+                    <li><a class="hovereffect" href="">Services</a></li>
+                    <li><a class="hovereffect" href="">Projects</a></li>
+                    <li><a class="hovereffect" href="">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Surendra</span> 
+                <div>and I am a passionate </div>
+                <span id="element"></span>
+
+            </div>
+                
+            <div class="rightsection">
+                <img src="bg.png" alt="image">
+            </div>
+        </section>
+        <section class="secondsection">
+           <h1>Academic Background</h1> 
+           <div class="box">
+            <div class="vertical">
+                <div class="vertical-title">New Era Secondary Shool
+                    <span>(2018-2019)</span>
+                </div>
+                <div class="vertical-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+            <div class="vertical">
+                <div class="vertical-title">Tilottama Campus <span>(2019-2022)</span></div>
+                <div class="vertical-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="vertical">
+                <div class="vertical-title">Tribhuwan University <span>(2023-present)</span></div>
+                <div class="vertical-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+           </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Surendra's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contacts</li>
+                </ul>
+
+            </div>
+            <div class="footerfourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.surendrasportfolio.net || Copyright &#169; All Rights Reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'DSA Expert','Programmer','Network Architecture designer','Data Analyst'],
+          typeSpeed:40,
+        });
+      </script>
+</body>
+</html>
